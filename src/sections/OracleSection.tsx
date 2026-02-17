@@ -1,3 +1,4 @@
+// Cache bust: 2026-02-17-v3
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
