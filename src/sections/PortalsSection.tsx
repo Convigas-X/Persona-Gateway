@@ -88,7 +88,7 @@ export default function PortalsSection() {
           onMouseLeave={() => setHoveredCard(null)}
         >
           <a
-            href="https://architect-portfolio.example.com"
+            href="https://react-portfolio-sage.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="block relative h-full"
@@ -173,7 +173,7 @@ export default function PortalsSection() {
           onMouseLeave={() => setHoveredCard(null)}
         >
           <a
-            href="https://operator-portfolio.example.com"
+            href="https://shayan-eight.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="block relative h-full"
