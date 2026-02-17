@@ -99,17 +99,15 @@ export default function OracleSection() {
    - React.js, Next.js, Node.js, TypeScript, Tailwind CSS
    - Web applications, dashboards, e-commerce, SaaS platforms
    - UI/UX design, responsive design, performance optimization
-   - Best for: Frontend-heavy projects, user interfaces, web apps
 
 2. THE OPERATOR (Offensive Security & Low-Level Engineering):
    - Offensive security, penetration testing, vulnerability assessment
    - Arch Linux, kernel optimization, bash scripting
    - Blockchain, smart contracts, decentralized systems
-   - Best for: Security audits, system hardening, low-level optimization
 
 Analyze the user's request and respond with a JSON object containing:
 - type: "architect" | "operator" | "both"
-- reason: A brief explanation (2-3 sentences) of why this path is recommended
+- reason: A brief explanation (2-3 sentences) of why this path is recommended. DO NOT include any URLs in the reason.
 - confidence: A number between 0-100 indicating confidence level
 
 Respond ONLY with the JSON object, no other text.`,
