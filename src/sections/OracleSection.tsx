@@ -219,7 +219,7 @@ Respond ONLY with the JSON object, no other text.`,
         color: 'text-[#0096ff]',
         bgColor: 'bg-[#0096ff]/10',
         borderColor: 'border-[#0096ff]/30',
-        link: 'https://architect-portfolio.example.com',
+        link: 'https://react-portfolio-sage.vercel.app/',
         linkText: 'Enter the Studio',
       },
       operator: {
@@ -228,7 +228,7 @@ Respond ONLY with the JSON object, no other text.`,
         color: 'text-[#ff3232]',
         bgColor: 'bg-[#ff3232]/10',
         borderColor: 'border-[#ff3232]/30',
-        link: 'https://operator-portfolio.example.com',
+        link: 'https://shayan-eight.vercel.app/',
         linkText: 'Enter the Matrix',
       },
       both: {
@@ -273,7 +273,7 @@ Respond ONLY with the JSON object, no other text.`,
         {recommendation.type === 'both' && (
           <div className="flex gap-4 mt-4">
             <a
-              href="https://architect-portfolio.example.com"
+              href="https://react-portfolio-sage.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[#0096ff] font-mono text-sm hover:underline"
@@ -282,7 +282,7 @@ Respond ONLY with the JSON object, no other text.`,
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="https://operator-portfolio.example.com"
+              href="https://shayan-eight.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[#ff3232] font-mono text-sm hover:underline"
