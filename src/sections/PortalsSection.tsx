@@ -83,181 +83,188 @@ export default function PortalsSection() {
       >
         {/* Architect Portal Card */}
         <div
-          className="portal-card group relative"
+          className="portal-card group relative h-full"
           onMouseEnter={() => setHoveredCard('architect')}
           onMouseLeave={() => setHoveredCard(null)}
         >
-          {/* Card Container */}
-          <div className="relative rounded-3xl overflow-hidden border border-[#0096ff]/30 group-hover:border-[#0096ff]/60 transition-all duration-500 hover:shadow-[0_0_60px_rgba(0,150,255,0.2)] bg-gradient-to-br from-[#0a1535] to-[#050a1f]">
-            {/* Top Gradient Line */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#0096ff] to-transparent opacity-50" />
-            
-            {/* Animated Glow */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-              <div className="absolute top-1/4 right-0 w-64 h-64 bg-[#0096ff]/10 rounded-full blur-3xl" />
-              <div className="absolute bottom-1/4 left-0 w-48 h-48 bg-[#0096ff]/5 rounded-full blur-2xl" />
-            </div>
+          <a
+            href="https://react-portfolio-sage.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block relative h-full"
+          >
+            {/* Card Container */}
+            <div className="relative h-full rounded-3xl overflow-hidden border border-[#0096ff]/30 group-hover:border-[#0096ff]/60 transition-all duration-500 hover:shadow-[0_0_60px_rgba(0,150,255,0.2)] bg-gradient-to-br from-[#0a1535] to-[#050a1f] flex flex-col">
+              {/* Top Gradient Line */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#0096ff] to-transparent opacity-50" />
+              
+              {/* Animated Glow */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                <div className="absolute top-1/4 right-0 w-64 h-64 bg-[#0096ff]/10 rounded-full blur-3xl" />
+                <div className="absolute bottom-1/4 left-0 w-48 h-48 bg-[#0096ff]/5 rounded-full blur-2xl" />
+              </div>
 
-            {/* Content */}
-            <div className="relative z-10 p-8 md:p-10">
-              {/* Header with Icon */}
-              <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0096ff]/30 to-[#0096ff]/5 flex items-center justify-center border border-[#0096ff]/40 group-hover:border-[#0096ff]/60 transition-all group-hover:scale-110 duration-300">
-                    <Code2 className="w-8 h-8 text-[#0096ff]" />
+              {/* Content */}
+              <div className="relative z-10 p-8 md:p-10 flex flex-col h-full">
+                {/* Header with Icon */}
+                <div className="flex items-center justify-between mb-8">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0096ff]/30 to-[#0096ff]/5 flex items-center justify-center border border-[#0096ff]/40 group-hover:border-[#0096ff]/60 transition-all group-hover:scale-110 duration-300 flex-shrink-0">
+                      <Code2 className="w-8 h-8 text-[#0096ff]" />
+                    </div>
+                    <div>
+                      <p className="text-[#0096ff] font-mono text-sm mb-1">PORTFOLIO 01</p>
+                      <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">
+                        THE ARCHITECT
+                      </h3>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-[#0096ff] font-mono text-sm mb-1">PORTFOLIO 01</p>
-                    <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">
-                      THE ARCHITECT
-                    </h3>
+                  <div className="hidden md:block">
+                    <ExternalLink className="w-6 h-6 text-[#0096ff] opacity-50 group-hover:opacity-100 transition-opacity" />
                   </div>
                 </div>
-                <div className="hidden md:block">
-                  <ExternalLink className="w-6 h-6 text-[#0096ff] opacity-50 group-hover:opacity-100 transition-opacity" />
-                </div>
-              </div>
 
-              {/* Description */}
-              <p className="text-gray-400 mb-8 leading-relaxed">
-                Full Stack Development & UI/UX Design. Building high-performance web applications 
-                with pixel-perfect interfaces and modern technologies.
-              </p>
+                {/* Description */}
+                <div className="h-20 mb-8">
+                  <p className="text-gray-400 leading-relaxed">
+                    Full Stack Development & UI/UX Design. Building high-performance web applications 
+                    with pixel-perfect interfaces.
+                  </p>
+                </div>
 
-              {/* Tech Stack Grid */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#0096ff]/5 border border-[#0096ff]/10">
-                  <Layers className="w-5 h-5 text-[#0096ff]" />
-                  <span className="text-gray-300 text-sm">React & Next.js</span>
+                {/* Tech Stack Grid */}
+                <div className="grid grid-cols-2 gap-4 mb-8 mt-auto">
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-[#0096ff]/5 border border-[#0096ff]/10">
+                    <Layers className="w-5 h-5 text-[#0096ff]" />
+                    <span className="text-gray-300 text-sm">React & Next.js</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-[#0096ff]/5 border border-[#0096ff]/10">
+                    <Globe className="w-5 h-5 text-[#0096ff]" />
+                    <span className="text-gray-300 text-sm">UI/UX Design</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-[#0096ff]/5 border border-[#0096ff]/10">
+                    <Database className="w-5 h-5 text-[#0096ff]" />
+                    <span className="text-gray-300 text-sm">Backend APIs</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-[#0096ff]/5 border border-[#0096ff]/10">
+                    <Cpu className="w-5 h-5 text-[#0096ff]" />
+                    <span className="text-gray-300 text-sm">Performance</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#0096ff]/5 border border-[#0096ff]/10">
-                  <Globe className="w-5 h-5 text-[#0096ff]" />
-                  <span className="text-gray-300 text-sm">UI/UX Design</span>
-                </div>
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#0096ff]/5 border border-[#0096ff]/10">
-                  <Database className="w-5 h-5 text-[#0096ff]" />
-                  <span className="text-gray-300 text-sm">Backend APIs</span>
-                </div>
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#0096ff]/5 border border-[#0096ff]/10">
-                  <Cpu className="w-5 h-5 text-[#0096ff]" />
-                  <span className="text-gray-300 text-sm">Performance</span>
-                </div>
-              </div>
 
-              {/* CTA */}
-              <div className="flex items-center justify-between pt-6 border-t border-[#0096ff]/20">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#0096ff] animate-pulse"></span>
-                  <span className="text-gray-500 text-sm">Available for projects</span>
+                {/* CTA */}
+                <div className="flex items-center justify-between pt-6 border-t border-[#0096ff]/20 mt-auto">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#0096ff] animate-pulse"></span>
+                    <span className="text-gray-500 text-sm">Available for projects</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-[#0096ff] font-mono text-sm group-hover:gap-4 transition-all">
+                    <span>Explore</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </div>
                 </div>
-                <a
-                  href="https://react-portfolio-sage.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                  className="flex items-center gap-2 text-[#0096ff] font-mono text-sm group-hover:gap-4 transition-all hover:brightness-125"
-                >
-                  <span>Explore</span>
-                  <ExternalLink className="w-4 h-4" />
-                </a>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Operator Portal Card */}
         <div
-          className="portal-card group relative"
+          className="portal-card group relative h-full"
           onMouseEnter={() => setHoveredCard('operator')}
           onMouseLeave={() => setHoveredCard(null)}
         >
-          {/* Card Container */}
-          <div className="relative rounded-3xl overflow-hidden border border-[#ff3232]/30 group-hover:border-[#ff3232]/60 transition-all duration-500 hover:shadow-[0_0_60px_rgba(255,50,50,0.2)] bg-gradient-to-br from-[#1a0505] to-[#0d0303]">
-            {/* Top Gradient Line */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#ff3232] to-transparent opacity-50" />
-            
-            {/* Animated Glow */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-              <div className="absolute top-1/4 left-0 w-64 h-64 bg-[#ff3232]/10 rounded-full blur-3xl" />
-              <div className="absolute bottom-1/4 right-0 w-48 h-48 bg-[#ff3232]/5 rounded-full blur-2xl" />
-            </div>
-
-            {/* Matrix Rain Effect (on hover) */}
-            {hoveredCard === 'operator' && (
-              <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-10">
-                <MatrixRain />
+          <a
+            href="https://shayan-eight.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block relative h-full"
+          >
+            {/* Card Container */}
+            <div className="relative h-full rounded-3xl overflow-hidden border border-[#ff3232]/30 group-hover:border-[#ff3232]/60 transition-all duration-500 hover:shadow-[0_0_60px_rgba(255,50,50,0.2)] bg-gradient-to-br from-[#1a0505] to-[#0d0303] flex flex-col">
+              {/* Top Gradient Line */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#ff3232] to-transparent opacity-50" />
+              
+              {/* Animated Glow */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                <div className="absolute top-1/4 left-0 w-64 h-64 bg-[#ff3232]/10 rounded-full blur-3xl" />
+                <div className="absolute bottom-1/4 right-0 w-48 h-48 bg-[#ff3232]/5 rounded-full blur-2xl" />
               </div>
-            )}
 
-            {/* Content */}
-            <div className="relative z-10 p-8 md:p-10">
-              {/* Header with Icon */}
-              <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#ff3232]/30 to-[#ff3232]/5 flex items-center justify-center border border-[#ff3232]/40 group-hover:border-[#ff3232]/60 transition-all group-hover:scale-110 duration-300">
-                    <Terminal className="w-8 h-8 text-[#ff3232]" />
+              {/* Matrix Rain Effect (on hover) */}
+              {hoveredCard === 'operator' && (
+                <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-10">
+                  <MatrixRain />
+                </div>
+              )}
+
+              {/* Content */}
+              <div className="relative z-10 p-8 md:p-10 flex flex-col h-full">
+                {/* Header with Icon */}
+                <div className="flex items-center justify-between mb-8">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#ff3232]/30 to-[#ff3232]/5 flex items-center justify-center border border-[#ff3232]/40 group-hover:border-[#ff3232]/60 transition-all group-hover:scale-110 duration-300 flex-shrink-0">
+                      <Terminal className="w-8 h-8 text-[#ff3232]" />
+                    </div>
+                    <div>
+                      <p className="text-[#ff3232] font-mono text-sm mb-1">PORTFOLIO 02</p>
+                      <h3 className="font-heading text-2xl md:text-3xl font-bold text-white font-mono">
+                        THE OPERATOR
+                      </h3>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-[#ff3232] font-mono text-sm mb-1">PORTFOLIO 02</p>
-                    <h3 className="font-heading text-2xl md:text-3xl font-bold text-white font-mono">
-                      THE OPERATOR
-                    </h3>
+                  <div className="hidden md:block">
+                    <ExternalLink className="w-6 h-6 text-[#ff3232] opacity-50 group-hover:opacity-100 transition-opacity" />
                   </div>
                 </div>
-                <div className="hidden md:block">
-                  <ExternalLink className="w-6 h-6 text-[#ff3232] opacity-50 group-hover:opacity-100 transition-opacity" />
+
+                {/* Description */}
+                <div className="h-20 mb-8">
+                  <p className="text-gray-400 leading-relaxed font-mono text-sm">
+                    {`> Offensive Security & Low-Level Engineering`}<br />
+                    {`> Penetration testing & vulnerability assessment`}
+                  </p>
+                </div>
+
+                {/* Tech Stack Grid */}
+                <div className="grid grid-cols-2 gap-4 mb-8 mt-auto">
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-[#ff3232]/5 border border-[#ff3232]/10">
+                    <Shield className="w-5 h-5 text-[#ff3232]" />
+                    <span className="text-gray-300 text-sm font-mono">Penetration Testing</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-[#ff3232]/5 border border-[#ff3232]/10">
+                    <Terminal className="w-5 h-5 text-[#ff3232]" />
+                    <span className="text-gray-300 text-sm font-mono">Linux Systems</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-[#ff3232]/5 border border-[#ff3232]/10">
+                    <Cpu className="w-5 h-5 text-[#ff3232]" />
+                    <span className="text-gray-300 text-sm font-mono">Kernel Dev</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-[#ff3232]/5 border border-[#ff3232]/10">
+                    <Database className="w-5 h-5 text-[#ff3232]" />
+                    <span className="text-gray-300 text-sm font-mono">Blockchain</span>
+                  </div>
+                </div>
+
+                {/* CTA */}
+                <div className="flex items-center justify-between pt-6 border-t border-[#ff3232]/20 mt-auto">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#ff3232] animate-pulse"></span>
+                    <span className="text-gray-500 text-sm font-mono">{`status: active`}</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-[#ff3232] font-mono text-sm group-hover:gap-4 transition-all">
+                    <span>{`> Access`}</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </div>
                 </div>
               </div>
 
-              {/* Description */}
-              <p className="text-gray-400 mb-8 leading-relaxed font-mono text-sm">
-                {`> Offensive Security & Low-Level Engineering`}<br />
-                {`> Secure systems from kernel to cloud`}<br />
-                {`> Penetration testing & vulnerability assessment`}
-              </p>
-
-              {/* Tech Stack Grid */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#ff3232]/5 border border-[#ff3232]/10">
-                  <Shield className="w-5 h-5 text-[#ff3232]" />
-                  <span className="text-gray-300 text-sm font-mono">Penetration Testing</span>
-                </div>
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#ff3232]/5 border border-[#ff3232]/10">
-                  <Terminal className="w-5 h-5 text-[#ff3232]" />
-                  <span className="text-gray-300 text-sm font-mono">Linux Systems</span>
-                </div>
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#ff3232]/5 border border-[#ff3232]/10">
-                  <Cpu className="w-5 h-5 text-[#ff3232]" />
-                  <span className="text-gray-300 text-sm font-mono">Kernel Dev</span>
-                </div>
-                <div className="flex items-center gap-3 p-3 rounded-xl bg-[#ff3232]/5 border border-[#ff3232]/10">
-                  <Database className="w-5 h-5 text-[#ff3232]" />
-                  <span className="text-gray-300 text-sm font-mono">Blockchain</span>
-                </div>
-              </div>
-
-              {/* CTA */}
-              <div className="flex items-center justify-between pt-6 border-t border-[#ff3232]/20">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#ff3232] animate-pulse"></span>
-                  <span className="text-gray-500 text-sm font-mono">{`status: active`}</span>
-                </div>
-                <a
-                  href="https://shayan-eight.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-[#ff3232] font-mono text-sm group-hover:gap-4 transition-all hover:brightness-125"
-                >
-                  <span>{`> Access`}</span>
-                  <ExternalLink className="w-4 h-4" />
-                </a>
+              {/* Scanline Effect */}
+              <div className="absolute inset-0 pointer-events-none opacity-5">
+                <div className="absolute inset-0 scanlines" />
               </div>
             </div>
-
-            {/* Scanline Effect */}
-            <div className="absolute inset-0 pointer-events-none opacity-5">
-              <div className="absolute inset-0 scanlines" />
-            </div>
-          </div>
+          </a>
         </div>
       </div>
 
