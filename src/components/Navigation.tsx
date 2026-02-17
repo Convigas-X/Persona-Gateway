@@ -130,7 +130,7 @@ export default function Navigation() {
           return (
             <button
               key={item.id}
-              ref={el => buttonsRef.current[index] = el}
+              ref={el => { buttonsRef.current[index] = el; }}
               onClick={() => scrollToSection(item.id)}
               className={`
                 relative px-5 py-2.5 rounded-full flex items-center gap-2.5
